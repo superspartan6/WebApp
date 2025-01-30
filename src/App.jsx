@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Route, Routes } from 'react-router-dom';
+import About from "./pages/About"
+import MainLayout from './layouts/MainLayout';
 
 
-const Home = () => <h1>Home</h1>;
-const About = () => <h1>About</h1>;
+const Home = () => <MainLayout><h1>Home</h1></MainLayout>;
 const NotFound = () => <h1>Not Found</h1>
 function App() {
   return(
     <div>
-      <Routes>
+      <Routes>  
         <Route path = '/' element={<Home />} />
         <Route path = '/About' element={<About />} />
         <Route path = '*' element={<NotFound />} />
