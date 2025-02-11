@@ -2,17 +2,21 @@ import React, { useEffect } from "react";
 import MainNav from "../pages/MainNav";
 import MainFooter from "../pages/MainFooter";
 
-const MainLayout = ({children, title}) => {
+const MainLayout = ({ children, title }) => {
     useEffect(() => {
-        if (title)
-        {
+        if (title) {
             document.title = title;
         }
     }, [title]);
+    
     return (
-        <div>
+        <div className="app-wrapper">
             <MainNav />
-            {children}
+            <div className="content">
+                <div className="container">
+                    {children}
+                </div>
+            </div>
             <MainFooter />
         </div>
     );
