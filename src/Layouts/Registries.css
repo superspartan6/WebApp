@@ -1,0 +1,75 @@
+/* Container styling */
+.registries-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Heading styling */
+  .registries-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .registries-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  /* Registry items layout */
+  .registry-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Individual registry item styling */
+  .registry-item {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .registry-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Registry item headings */
+  .registry-item h2 {
+    margin-top: 0;
+    color: #007BFF;
+  }
+  
+  /* Registry item paragraph */
+  .registry-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0 1rem 0;
+  }
+  
+  /* Registry links styling */
+  .registry-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registry-item a:hover {
+    background-color: #0056b3;
+  }
+  

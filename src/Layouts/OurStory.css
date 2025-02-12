@@ -1,0 +1,44 @@
+.our-story-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+  }
+  
+  .our-story-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .our-story-container p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .story-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 4px solid #007BFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .story-section h2 {
+    margin-top: 0;
+    color: #007BFF;
+  }
+  
+  .story-section p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555;
+  }
+  
