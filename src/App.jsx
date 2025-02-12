@@ -1,29 +1,26 @@
-import './App.css'
-import { Route, Routes } from 'react-router-dom';
-import About from "./pages/About"
-import MainLayout from './layouts/MainLayout';
-
-const Home = () => (
-  <MainLayout title="Home | MyPage">
-    <h1>Home</h1>
-  </MainLayout>
-);
-
-const NotFound = () => (
-  <MainLayout title="404 Not Found">
-    <h1>404 Not Found</h1>
-    <p>The page you are looking for does not exist.</p>
-  </MainLayout>
-);
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import Home from './Layouts/Home.jsx';
+import Gallery from './Layouts/Gallery.jsx';
+import MessageUs from './Layouts/MessageUs.jsx';
+import Registries from './Layouts/Registries.jsx';
+import OurStory from './Layouts/OurStory.jsx';
 
 function App() {
   return (
-    <div>
-      <Routes>  
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+    <div className="appPage">
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/message-us" element={<MessageUs />} />
+          <Route path="/registries" element={<Registries />} />
+          <Route path="/our-story" element={<OurStory />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }
